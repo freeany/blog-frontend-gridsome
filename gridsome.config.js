@@ -22,6 +22,16 @@ module.exports = {
         //   password: ''
         // }
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './md/blog/**/*.md',
+        typeName: 'mdblog',
+        remark: {
+          // remark options
+        }
+      }
     }
   ],
   templates: {
