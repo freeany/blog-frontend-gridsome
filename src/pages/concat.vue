@@ -116,6 +116,9 @@
 import axios from 'axios'
 export default {
   name: 'ConcatPage',
+  metaInfo: {
+    title: 'Concat us'
+  },
   data () {
     return {
       errors: {},

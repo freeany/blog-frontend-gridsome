@@ -114,7 +114,7 @@ export default {
     Pager
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: '心灵捕手'
   },
   computed: {
     general () {

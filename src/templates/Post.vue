@@ -73,6 +73,9 @@ const md = new markdownIt()
 
 export default {
   name: 'postPage',
+  metaInfo: {
+    title: '文章详情'
+  },
   methods: {
     mdToHtml (markdown) {
       return md.render(markdown)

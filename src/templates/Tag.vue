@@ -60,7 +60,9 @@ query($id: ID!) {
 
 export default {
   name: 'tagPage',
-
+  metaInfo: {
+    title: '标签页面'
+  }
 }
 </script>
 
