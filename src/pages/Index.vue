@@ -1,12 +1,10 @@
 <template>
   <Layout>
     <!-- Page Header -->
-    <header
-      class="masthead"
-      :style="{
-        backgroundImage: `url(${GRIDSOME_API_URL + general.cover.url})`,
-      }"
-    >
+    <!-- home-bg.jpg -->
+    <!-- backgroundImage: `url(${GRIDSOME_API_URL + general.cover.url})`, -->
+
+    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">

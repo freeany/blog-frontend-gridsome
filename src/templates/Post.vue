@@ -70,15 +70,28 @@ query($id: ID!) {
 <script>
 import markdownIt from 'markdown-it'
 const md = new markdownIt()
-
+import axios from 'axios'
 export default {
   name: 'postPage',
   metaInfo: {
-    title: '文章详情'
+    title: '文章详情',
+    // meta: [
+    //   {
+    //     'http-equiv': "Content-Security-Policy",
+    //     'content': "upgrade-insecure-requests"
+    //   }
+    // ]
+  },
+  mounted () {
+    this.getImage()
   },
   methods: {
     mdToHtml (markdown) {
       return md.render(markdown)
+    },
+    async getImage () {
+      const r = await axios.get('http://39.97.66.133:1337/uploads/about_bg_9153bcc02d.jpg')
+      console.log(r)
     }
   }
 }
@@ -86,3 +99,5 @@ export default {
 
 <style>
 </style>
+
+
